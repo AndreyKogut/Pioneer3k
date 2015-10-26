@@ -1,0 +1,362 @@
+.cf:after,.cf:before {content: '';display: table;}
+.cf:after {clear: both;}
+.cf {zoom: 1;}
+
+@font-face {
+ font-family: "Helvetica"; 
+ src: url("fonts//HELVETICAWORLD-BOLD.eot"); 
+ src: url("fonts//HELVETICAWORLD-BOLD.eot?#iefix")format("embedded-opentype"), 
+ url("fonts//HELVETICAWORLD-BOLD.woff") format("woff"), 
+ url("fonts//HELVETICAWORLD-BOLD.TTF") format("truetype"); 
+ font-style: normal; 
+ font-weight: normal; 
+ }
+
+ @font-face {
+  font-family: "PailHelvetica"; 
+  src: url("fonts//pali-helvetica-bold.eot"); 
+  src: url("fonts//pali-helvetica-bold.eot?#iefix")format("embedded-opentype"), 
+  url("fonts//pali-helvetica-bold.woff") format("woff"), 
+  url("fonts//pali-helvetica-bold.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body {
+	font-size: 38pt;
+	color: #fff;
+	line-height: 30px;
+	font-family: "PailHelvetica";
+}
+
+ul {
+	list-style: none;
+}
+
+.bg{
+	width: 100%;
+	height: 100%;
+	background-color: #d14c2b;
+	min-height: 100vh;
+	display: block;
+	padding-top: 40px;
+	margin: auto;
+}
+
+.main-wrapper {
+	margin: 0 auto;
+	display: block;
+	width: 1300px;
+	background: url(../images/hard_bg.png) center center no-repeat;
+	padding: 30px 15px;
+}
+
+header {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.main-wrapper header li {
+	display: inline-block;
+	font-family: "Helvetica";
+}
+
+.main-wrapper header ul li:nth-child(2){
+	margin-left: 80px;
+	margin-right: 40px;
+}
+
+.main-wrapper header ul li:last-child {
+	margin-right: 0;
+}
+
+.main-wrapper .logo{
+	font-size: 1em;
+	vertical-align: top;
+	font-family: 'Orbitron', sans-serif; 
+}
+
+.main-wrapper .prod-name {
+	font-size: 2em;
+	line-height: 1;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: "Helvetica";
+}
+
+.main-wrapper .date-wrapper{
+	font-size: 0.4em;
+	padding-top: 50px;
+}
+
+.main-wrapper .date {
+	transform: rotate(90deg);
+	text-transform: uppercase;
+}
+
+.main-wrapper .date>* {
+	margin: 0;
+}
+
+.main-wrapper .links{
+	vertical-align: top;
+	margin-left: 60px;
+}
+
+.main-wrapper .links div:first-child {
+	margin-left: 0;
+}
+
+.main-wrapper .links>* {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+aside, .product {
+	display: block;
+	float: left; 
+	margin-left: 60px;
+	position: relative;
+}
+
+aside ul {
+	padding-left: 0;
+}
+
+aside nav ul li {
+	display: block !important;
+	line-height: 0.6;
+}
+
+aside nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding-left: 30px;
+	font-size: 0.4em;
+	text-transform: uppercase;
+	line-height: 2;
+}
+
+aside nav a:before {
+	content: "";
+	width: 20px;
+	height: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+aside a:hover:before {
+	background-color: #fff;
+}
+
+aside .active:before{
+	background-color: #fff;
+}
+
+aside .user-data{
+	padding-left: 30px;
+	margin-top: 80px;
+	font-size: 0.5em;
+}
+
+aside .user-data .payment {
+	transform:rotate(90deg);
+	display: inline-block;
+	width: auto;
+}
+
+aside .user-data p {
+	margin-top: 40px;
+	padding-left: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.content-wrapper, footer {
+	display: block;
+}
+
+.content_wrapper .product {
+	vertical-align: top;
+	position: relative;
+}
+
+.product figure img {
+	margin-bottom: 90px;
+	display: inline-block;
+}
+
+.product figcaption>* {
+	display: inline-block;
+}
+
+.product figure{
+	position: relative;
+	z-index: 1;
+	width: 340px;
+	text-align: center;
+}
+
+.product figure:before {
+	content: "";
+	width: 340px;
+	height: 340px;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	background-color: #00ffae;
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	margin-top: 60px;
+}
+
+.content-wrapper .product>*{
+	display: inline-block;
+}
+
+.product .second-img {
+	padding-top: 80px;
+	vertical-align: top;
+	margin-left: 20px;
+}
+.product .second-img:before {
+	background-color: #fff600;
+	margin-top: 150px;
+}
+
+.product .beetw-fig {
+	position: absolute;
+	text-align: center;
+	padding-top: 120px;
+	font-size: 0.4em;
+	display: inline-block;
+	transform: rotate(90deg);
+	padding-right: 40px;
+	border-bottom: 2px solid #fff;
+}
+
+.product figcaption a{
+	font-size: 0.45em;
+	text-decoration: none;
+	color: #fff;
+}
+
+.product figcaption a:hover {
+	text-decoration: underline;
+}
+
+.product figcaption {
+	text-align: right;
+	margin-top: 25px;
+}
+
+.product figcaption .price {
+	transform: rotate(90deg);
+	padding-right: 30px;
+	margin-left: -40px;
+	font-size: 0.8em;
+	float: left;
+}
+
+.product-caption {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	font-size: 0.5em;
+	text-transform: uppercase;
+}
+
+.content-wrapper .colors-change {
+	text-align: right;
+	vertical-align: top;
+	padding-top: 150px;
+	font-family: "Helvetica";
+}
+
+.content-wrapper .colors-change ul {
+	display: inline-block;
+}
+
+.content-wrapper .colors-change ul li{
+	text-transform: uppercase;
+}
+
+.content-wrapper .colors-change ul li a{
+	text-transform: uppercase;
+	line-height: 3;
+	font-size: 0.4em;
+	margin-left: 30px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.content-wrapper .colors-change li:before {
+	content: "";
+	width: 50px;
+	height: 5px;
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+}
+
+.content-wrapper .colors-change .active-type2:before {
+	background-color: #fff;
+} 
+
+.content-wrapper .colors-change li:hover:before {
+	background-color: #fff;
+}
+
+.main-wrapper>footer {
+	vertical-align: middle;
+	padding: 15px 100px;
+	padding-top: 0;
+}
+
+footer .copyright {
+	display: block;
+	float: left;
+	font-size: 0.3em;
+}
+
+footer .copyright p{
+	margin: 0;
+	line-height: 1;
+}
+
+footer .languige ul {
+	float: right;
+	display: block;
+}
+
+footer .languige ul li {
+	float: left;
+	display: inline-block;
+}
+
+footer .languige ul li a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 0.5em;
+	text-transform: uppercase;
+	font-family: "Helvetica";
+}
+
+footer .languige ul li:first-child a {
+	margin-left: none;
+} 
+
+footer .languige ul li a:hover {
+	text-decoration: underline;
+}
