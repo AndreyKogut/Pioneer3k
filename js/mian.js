@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-		function imgUrlAdd(url1,url2,firstImgBgClass,secondImgBgClass,bgClass) {
+		function themeAdd(url1,url2,firstImgBgClass,secondImgBgClass,bgClass) {
 			this.url1 = url1;
 			this.url2 = url2;	
 			this.firstImgBgClass = firstImgBgClass;
@@ -11,8 +11,8 @@ $(document).ready(function(){
 		}
 
 		var images = {
-			"orange" :  new imgUrlAdd("images/img_red_1.png","images/img_red_2.png"),
-			"dark-blue" : new imgUrlAdd("images/img_blue_1.png","images/img_blue_2.png"
+			"orange" :  new themeAdd("images/img_red_1.png","images/img_red_2.png"),
+			"dark-blue" : new themeAdd("images/img_blue_1.png","images/img_blue_2.png"
 									,"dark-blue-icon-1", "dark-blue-icon-2", "bg-color-dark-blue")
 		}
 
