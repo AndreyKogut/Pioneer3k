@@ -55,7 +55,6 @@ ul {
 	background-color: #d14c2b;
 	min-height: 100vh;
 	display: block;
-	padding-top: 5%;
 	margin: auto;
 	transition:background-color 1s linear;
 }
@@ -226,7 +225,13 @@ aside .user-data p {
 
 #img1 img, #img2 img {
 	height: 340px;
+	
 }
+
+#img1, #img2 {
+	background: none !important;
+}
+
 
 .product figcaption>* {
 	display: inline-block;
@@ -246,7 +251,8 @@ aside .user-data p {
 	z-index: -99999;
 	left: 0;
 	top: 60px;
-	background-color: #00ffae;
+	background-color: inherit;
+	background: inherit;
 	display: block;
 	position: absolute;
 	border-radius: 50%;
@@ -267,6 +273,10 @@ aside .user-data p {
 .product #img2:before {
 	background-color: #fff600;
 	top: 140px;
+}
+
+.product #img1:before {
+	background-color: #00ffae;
 }
 
 .product .beetw-fig {
@@ -358,6 +368,7 @@ aside .user-data p {
 	vertical-align: middle;
 	padding: 0 30px;
 	padding-bottom: 10px;
+	line-height: 1;
 }
 
 footer .copyright {
@@ -404,25 +415,6 @@ footer .languige ul li a:hover {
 }
 
 
-
-/* Styles for changing theme 
-		
-	(Dark blue)*/
-	.bg-color-dark-blue {
-		background-color: #186ba4 !important;
-	}
-
-	.dark-blue-icon-1:before {
-		background-color: #fff600 !important;
-	}
-
-	.dark-blue-icon-2:before {
-		background-color: #fff !important;
-	}
-
-/* End */
-
-
 /* <max-width screen*/
 
 @media (max-width: 1610px){
@@ -430,10 +422,6 @@ footer .languige ul li a:hover {
 body {
 	font-size: 24pt;
 
-}
-
-#bg {
-	padding-top: 3%;
 }
 
 .main-wrapper {
