@@ -2,6 +2,20 @@
 .cf:after {clear: both;}
 .cf {zoom: 1;}
 
+@keyframes note-hover {
+	10%		{ top: 64%; left: 42%; opacity: 1;}
+	20% 	{ top: 63%; left: 44%; opacity: 1;}
+	30% 	{ top: 62%; left: 46%; opacity: 1;}
+	40% 	{ top: 61%; left: 48%; opacity: 1;}
+	50% 	{ top: 62%; left: 49%; opacity: 1;}
+	60% 	{ top: 63%; left: 50%; opacity: 1;}
+	70%		{ top: 61%; left: 52%; opacity: 1;}
+	80% 	{ top: 60%; left: 53%; opacity: 1;}
+	90% 	{ top: 65%; left: 54%; opacity: 1;}
+	100% 	{ top: 61%; left: 55%; opacity: 1;}
+}
+
+
 @font-face {
  font-family: "Helvetica"; 
  src: url("fonts//HELVETICAWORLD-BOLD.eot"); 
@@ -57,6 +71,7 @@ ul {
 	display: block;
 	margin: auto;
 	transition:background-color 1s linear;
+	position: relative;
 }
 
 .main-wrapper {
@@ -414,6 +429,72 @@ footer .languige ul li a:hover {
 	text-decoration: underline;
 }
 
+/* Preload */
+
+.preload-wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #d14c2b;
+	z-index: 999999;
+}
+
+.preloader {
+	background: url(../images/preload.png) center center no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: auto 60%;
+
+}
+
+.preload-wrapper span {
+	font-size: .5em;
+	line-height: 1;
+	position: absolute;
+	width: 200px;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	text-align: center;
+}
+
+.preload-wrapper div[class^="note"] {
+	background-size: auto 100%;
+	width: 3.5%;
+	height: 3.5%;
+	position: absolute;
+	left: 41%;
+	top: 63%;
+	opacity: 0;
+}
+
+.preload-wrapper .note-1 {
+	background: url(../images/note-1.png) center center no-repeat;
+	animation: note-hover 2s linear infinite;
+}
+
+.preload-wrapper .note-2 {
+	background: url(../images/note-2.png)  center center no-repeat;
+	animation: note-hover 2s linear infinite;
+	animation-delay:.5s;
+}
+
+.preload-wrapper .note-3 {
+	background: url(../images/note-3.png)  center center no-repeat;
+	animation: note-hover 2s linear infinite;
+	animation-delay:1s;
+}
+
+.preload-wrapper .note-4 {
+	background: url(../images/note-4.png)  center center no-repeat;
+	animation: note-hover 2s linear infinite;
+	animation-delay:1.5s;
+}
+
+/* end */
 
 /* <max-width screen*/
 

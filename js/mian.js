@@ -1,12 +1,5 @@
 
-
-$(document).ready(function(){
-
-		
-
-
-
-		function themeAdd(url1,url2,firstImgBgColor,secondImgBgColor,bagColor) {
+function themeAdd(url1,url2,firstImgBgColor,secondImgBgColor,bagColor) {
 			this.url1 = url1;
 			this.url2 = url2;	
 			this.firstImgBgColor = firstImgBgColor;
@@ -20,6 +13,14 @@ $(document).ready(function(){
 			"dark-blue" : new themeAdd("images/img_blue_1.png","images/img_blue_2.png"
 									,"#fff600", "#fff", "#186ba4")
 		};
+
+$(window).on('load', function() {
+	$('#preload').delay(2000).fadeOut('slow');
+});
+
+
+
+$(document).ready(function(){		
 
 		function calc(g, theme, img1Top, img2Top, img1Color, img2Color, bg, imgPad){
 				
@@ -72,7 +73,7 @@ $(document).ready(function(){
 		var timers = new Array();
 		var check1 = true;
 		var check2 = true;
-		var themeHoverTime = 1;
+		var themeHoverTime = 10; // *100 msec
 
 		$langList.click(function(){
 			$("#languige-list li a").removeClass("active-type-3");
@@ -111,7 +112,7 @@ $(document).ready(function(){
 						myCurrentSecondImgColor = styles[$currentColor].secondImgBgColor;
 						myCurrentFirstImgColor = styles[$currentColor].firstImgBgColor;};	
          			if (k>100) clearInterval(timer);
-         		},themeHoverTime/10);
+         		},themeHoverTime);
 
    			timers.push(timer);
    			check1 = true; check2=true;
